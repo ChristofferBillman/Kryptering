@@ -3,7 +3,11 @@ import java.util.Arrays;
 public class CMDInput {
     public static void main(String[] args) {
         if (args.length == 0) System.out.println("Programmet vet inte vad det ska göra! Avbryter...");
-        if (args.length == 1) System.out.println("Så du säger" + args[0]);
+        if (args.length == 1) {
+            System.out.println("Så du säger" + args[0]);
+            System.out.println(Model.cryptString("Tja! Hur mår du yeahyeah","fdri3fiw0t5jvdjiheuggh4g", true));
+            System.out.println(Model.cryptString('p','fdri3fiw0t5jvdjiheugghej', false));
+        }
         if (args.length == 2) System.out.println(args[0] + args[1]);
         if (args.length == 3) System.out.println(Arrays.toString(reverseArray(args)));
         if (args.length == 4) {
